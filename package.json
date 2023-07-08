@@ -9,6 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "cypress": "^12.7.0",
     "emailjs": "^4.0.1",
+    "firebase": "^10.0.0",
+    "firebase-tools": "^12.4.3",
     "framer-motion": "^10.0.1",
     "motion": "^10.15.5",
     "netlify": "^13.1.2",
