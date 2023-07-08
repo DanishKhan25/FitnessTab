@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
+// change ==> logo from logo.png
 import "./Header.css";
 import { Link } from "react-scroll";
 import Bars from "../../assets/bars.png";

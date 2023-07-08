@@ -11,16 +11,18 @@ const Footer = () => {
           <div className="box">
             <h3>Address</h3>
             <a href="googlemaplink">Satara Parisar, Aurangabad</a>
+            {/* change  ===> address and google map */}
             <a href="wa.me"><img alt="whatsapp" src={wp} height="80" width="240" className="btn"/></a>
           </div>
         <div className="box">
             <h3>Contact Us </h3>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-                <i className="fa">
-                <a href="tel:+91 8888817886">+91 4363557535 </a></i>  
+                
+            <a href="tel:+91 9370220603"><i className="fa fa-phone"></i> +91 93702 20603 </a>  
+                {/* change ==> */}
                 <br></br>
-                <i className="fa">
-                <a href="mailto:info.shubham@gmail.com">info@shubham.com</a></i>
+               
+                <a href="mailto:tabish7766@gmail.com"> <i className="fa fa-envelope"></i> tabish7766@gmail.com</a>
             </div>
         <div className="box">
             <h3>Follow us</h3>
@@ -34,6 +36,7 @@ const Footer = () => {
                  <a href="Facebook"><i className="fab fa-facebook-f"> Facebook</i></a>
                  <a href="Instagram"><i className="fab fa-instagram"> Instagram</i></a>
                  <a href="Whatsapp link"><i className="fab fa-whatsapp">Whatsapp</i></a>
+                 {/* change ==> add whatsapp, insta  ,facebook  link */}
                  <a href="https://www.google.com/maps/">
                 <i className="fab fa-google">Google Maps</i></a>
                </div>
@@ -42,7 +45,7 @@ const Footer = () => {
       </div>
     </section>
     <div className="credits">
-        <p>© 2023 Shuence. All Rights Reserved.</p>
+        <p>© 2023 Tabish. All Rights Reserved.</p>
       </div>
     </div>
     </>
