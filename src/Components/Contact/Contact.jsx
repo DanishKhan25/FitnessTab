@@ -11,7 +11,7 @@ const Contact = () => {
         var plan = document.getElementById("plan").value;
         var message = document.getElementById("message").value;
          
-        var url = "https://wa.me/+918766539293?text="
+        var url = "https://wa.me/+919370220603?text="
         +"*Name :* "+name+"%0a"
         +"*Email :* "+email+"%0a"
         +"*Contact No :* "+phone+"%0a"
