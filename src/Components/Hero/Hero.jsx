@@ -1,51 +1,56 @@
-import React from 'react'
-import "./Hero.css"
-import hero_image from "../../assets/hero_image.png"
-import hero_back from "../../assets/hero_image_back.png"
-import heart from "../../assets/heart.png"
-import calories from "../../assets/calories.png"
-import { motion } from "framer-motion"
+import React from "react";
+import "./Hero.css";
+import hero_image from "../../assets/hero_image.png";
+import hero_back from "../../assets/hero_image_back.png";
+import heart from "../../assets/heart.png";
+import calories from "../../assets/calories.png";
+import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
-import Header from '../Header/Header'
+import Header from "../Header/Header";
 import { Link } from "react-scroll";
 
 const Hero = () => {
   const transition = { duration: 3, type: "spring" };
-  const mobile = window.innerWidth<=768? true:false;
+  const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className="hero" id='home'>
+    <div className="hero" id="home">
       <div className="blur hero-blur"></div>
 
       <div className="left-h">
-        <Header/>
+        <Header />
         {/* the best ad */}
         <div className="the-best">
           <motion.div
-            initial={{left: mobile? "178px": '238px' }}
+            initial={{ left: mobile ? "178px" : "238px" }}
             whileInView={{ left: "8px" }}
             transition={{ ...transition, type: "tween" }}
           ></motion.div>
-          <span>THE BEST FITNESS CLUB IN THE TOWN</span>
+          <span>THE BEST FITNESS COACH IN THE TOWN</span>
         </div>
         {/* Hero text */}
         <div className="hero-text">
           <div>
-            <span className="stroke-text">Shape </span>
-            <span>Your</span>
+            <span className="stroke-text">MOVE</span>
+            <span> Your </span>
+
+            <span className="stroke-text">Body</span>
           </div>
           <div>
-            <span>Ideal body</span>
+            <span className="stroke-text">Shape</span>
+            <span> your </span>
+            <span className="stroke-text">future</span>
           </div>
           <div>
             <span>
-              In here we will help you to shape and build your ideal body and
-              live up your life to fullest
+              I am here to support you in achieving your fitness goals and
+              living life to the fullest by helping you shape and build your
+              ideal body.
             </span>
           </div>
         </div>
 
         {/* experience figures */}
-        <div className="figures">
+        {/* <div className="figures">
           <div>
             <span>
               <NumberCounter end={140} start={100} delay={4} preFix="+" />
@@ -64,7 +69,7 @@ const Hero = () => {
             </span>
             <span>fitness programs</span>
           </div>
-        </div>
+        </div> */}
 
         {/* hero buttons */}
         <div className="hero-btns">
@@ -75,13 +80,9 @@ const Hero = () => {
 
       {/* Right Side */}
       <div className="right-h">
-      <Link className="btn"
-              to="contact"
-              spy={true}
-              smooth={true}
-            >
-              Join now
-            </Link>
+        <Link className="btn" to="contact" spy={true} smooth={true}>
+          Join now
+        </Link>
 
         {/* heart rate */}
         <motion.div
@@ -98,7 +99,7 @@ const Hero = () => {
         {/* hero images */}
         <img className="hero-img" src={hero_image} alt="" />
         <motion.img
-            initial={{right: mobile? "11rem": '11rem' }}
+          initial={{ right: mobile ? "11rem" : "11rem" }}
           whileInView={{ right: "20rem" }}
           transition={transition}
           className="hero-back"
