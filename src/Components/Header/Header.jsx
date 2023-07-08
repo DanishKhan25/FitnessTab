@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import Logo from "../../assets/logo.png";
-// change ==> logo from logo.png
+import React, { useEffect, useState } from "react";
+import Logo from "../../assets/svg-logo/Fitnesstab.svg";
 import "./Header.css";
 import { Link } from "react-scroll";
 import Bars from "../../assets/bars.png";
@@ -8,12 +7,27 @@ import Bars from "../../assets/bars.png";
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
   const [menuOpened, setMenuOpened] = useState(false);
+  useEffect(() => {
+    if (menuOpened) {
+      const timeoutId = setTimeout(() => {
+        setMenuOpened(false);
+        console.log("clear");
+      }, 2000); // set timeout to 2 second
+
+      return () => clearTimeout(timeoutId); // clear timeout when component unmounts
+    }
+  }, [menuOpened, mobile]);
+
   return (
     <div className="header" id="header">
       <img src={Logo} alt="" className="logo" />
-      {(menuOpened===false && mobile===true)? (
+      {menuOpened === false && mobile === true ? (
         <div
-          style={{ backgroundColor: "var(--appColor)", padding: "0.5rem", borderRadius: "5px" }}
+          style={{
+            backgroundColor: "var(--appColor)",
+            padding: "0.5rem",
+            borderRadius: "5px",
+          }}
           onClick={() => setMenuOpened(true)}
         >
           <img

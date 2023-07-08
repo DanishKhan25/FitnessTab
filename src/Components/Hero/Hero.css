@@ -208,6 +208,7 @@
     font-size: xx-large;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .hero-text > div:nth-of-type(3) {
     font-size: small;
