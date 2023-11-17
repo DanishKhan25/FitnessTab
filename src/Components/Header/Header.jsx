@@ -5,7 +5,24 @@ import { Link } from "react-scroll";
 import Bars from "../../assets/bars.png";
 
 const Header = () => {
-  const mobile = window.innerWidth <= 768 ? true : false;
+  // const mobile = window.innerWidth <= 768 ? true : false;
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [window.innerWidth]);
   const [menuOpened, setMenuOpened] = useState(false);
   useEffect(() => {
     if (menuOpened) {
@@ -16,12 +33,12 @@ const Header = () => {
 
       return () => clearTimeout(timeoutId); // clear timeout when component unmounts
     }
-  }, [menuOpened, mobile]);
+  }, [menuOpened, isMobile]);
 
   return (
     <div className="header" id="header">
       <img src={Logo} alt="" className="logo" />
-      {menuOpened === false && mobile === true ? (
+      {menuOpened === false && isMobile === true ? (
         <div
           style={{
             backgroundColor: "var(--appColor)",

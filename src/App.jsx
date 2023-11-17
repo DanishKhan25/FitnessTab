@@ -7,11 +7,8 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Footer from "./Components/Footer/Footer";
 import Join from "./Components/Join/Join";
 import Contact from "./Components/Contact/Contact";
-import { useState } from "react";
 
 function App() {
-  const [menuOpened, setMenuOpened] = useState(false);
-
   return (
     <div className="App">
       <Hero />

@@ -5,7 +5,7 @@ import hero_back from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
-import NumberCounter from "number-counter";
+// import NumberCounter from "number-counter";
 import Header from "../Header/Header";
 import { Link } from "react-scroll";
 
@@ -73,8 +73,17 @@ const Hero = () => {
 
         {/* hero buttons */}
         <div className="hero-btns">
-          <button className="btn">Get Started</button>
-          <button className="btn">Learn More</button>
+          <Link
+            // onClick={() => setMenuOpened(false)}
+            to="plans"
+            spy={true}
+            smooth={true}
+            className="btn"
+          >
+            Get Started
+          </Link>
+
+          {/* <button className="btn">Learn More</button> */}
         </div>
       </div>
 

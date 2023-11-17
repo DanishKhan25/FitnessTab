@@ -51,13 +51,6 @@ Contributions are always welcome!
 
 Please adhere to this project's `code of conduct`.
 
-# Hi, I'm Shuence! 👋
-
-## 🚀 About Me
-
-I'm Shubham A FY B.Tech Student
-
-A Frontend Developer
 
 ## 🛠 Skills
 
