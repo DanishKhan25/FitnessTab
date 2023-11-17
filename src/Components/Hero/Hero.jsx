@@ -73,8 +73,17 @@ const Hero = () => {
 
         {/* hero buttons */}
         <div className="hero-btns">
-          <button className="btn">Get Started</button>
-          <button className="btn">Learn More</button>
+          <Link
+            // onClick={() => setMenuOpened(false)}
+            to="plans"
+            spy={true}
+            smooth={true}
+            className="btn"
+          >
+            Get Started
+          </Link>
+
+          {/* <button className="btn">Learn More</button> */}
         </div>
       </div>
 

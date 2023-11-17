@@ -11,11 +11,11 @@ export const plansData = [
       </svg>
     ),
     name: "BASIC PLAN",
-    price: "25",
+    price: "10,000",
     features: [
-      "2 hours of excercises",
-      "Free consultaion to coaches",
-      "Access to The Community",
+      "3 months Package",
+      "1-O-1 Consultations Weekly",
+      "Personalised diet plans and workout plans ",
     ],
   },
   {
@@ -30,11 +30,12 @@ export const plansData = [
       </svg>
     ),
     name: "PREMIUM PLAN",
-    price: "30",
+    price: "30,000",
     features: [
-      "5 hour of excercises",
-      "Free consultaion of Coaches",
-      "Accessto minibar",
+      "6 Months Package",
+      "1-O-1 Consultations Weekly",
+      "Personalised diet plans and workout plans",
+      "Will be getting Challenges and Rewards",
     ],
   },
   {
@@ -49,11 +50,13 @@ export const plansData = [
       </svg>
     ),
     name: "PRO PLAN",
-    price: "45",
+    price: "70,000",
     features: [
-      "8 hours of excercises",
-      "Consultation of Private Coach",
-      "Free Fitness Merchandises",
+      "12 Months Package",
+      "1-O-1 Consultations Weekly",
+      "Personalised diet plans and workout plans ",
+      "Will be getting Challenges and Rewards",
+      "24/7 Support",
     ],
   },
 ];
